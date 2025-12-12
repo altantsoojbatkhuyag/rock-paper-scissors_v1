@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-scissors-paper</title>
+    <link rel="stylesheet" href="./rps.css" />
+  </head>
+
+  <body>
+      <h1>Rock-scissors-paper</h1>
+
+      <div class="choices flex">
+        <button id="rock" onclick="turn('rock')">🪨</button>
+        <button id="scissors" onclick="turn('scissors')">✂️</button>
+        <button id="paper" onclick="turn('paper')">📄</button>
+      </div>
+      <div class="ourSidew">
+        <h1>Our side:</h1>
+        <h1 id="ourSide"></h1>
+      </div>
+      <div class="computerSidew">
+        <h1>Pc side:</h1>
+        <h1 id="computerSide"></h1>
+      </div>
+      <div class="Draww">
+        <h1>Draw Counter:</h1>
+        <h1 id="drawCounter"></h1>
+      </div>
+      <button id="restart" onclick="resetGame('restart')">RESET!!!</button>
+    <script src="./rps.js"></script>
+  </body>
+</html>
